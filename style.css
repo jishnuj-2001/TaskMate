@@ -1,0 +1,78 @@
+.logo{
+    animation: transitionIn 1.5s;
+    transform: scale(1);
+    filter: drop-shadow(2px 2px 5px black);
+    z-index: 1;
+    
+}
+.navbar{
+    background: hsl(0, 0%, 10%);
+    box-shadow: 3px 3px 15px rgb(70, 69, 69);
+    border-color: hsl(166,100%,80%);
+    animation: scaleDown 1.5s;
+}
+.login-details{
+    z-index: 0;
+    animation: scaleSide ease-in 1.5s;
+    box-shadow: 2px 2px 5px black;
+    filter:blur(0px)
+    
+}
+
+@keyframes transitionIn{
+    from{
+        opacity:0;
+        transform: scale(.9);
+        
+        
+    }
+    to{
+        opacity:1;
+        transform: scale(1);
+        filter: drop-shadow(2px 2px 5px black);
+        transition: opacity ease-in;
+        
+    }
+}
+@keyframes scaleDown{
+    from{
+        transform:translateY(-100px);
+    }
+    to{
+        transform: translateY(0);
+        transition: transform ease-in ;
+    }
+}
+@keyframes scaleSide{
+    from{
+        z-index: -1;
+        transform:translateY(-300px);
+        opacity:0;
+        filter: blur(4px);
+        box-shadow: 2px 2px 5px black;
+    }
+    to{
+        
+        transform: translateY(0);
+        opacity:1;
+        transition: transform ease-in-out ;
+        box-shadow: 2px 2px 5px black;
+    }
+}
+label{
+    color: rgb(149, 212, 214);
+}
+.nav-item{
+    color: aliceblue;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: transform ease-in .5s;
+
+}
+.card{
+    transform: scale(1);
+    box-shadow: 2px 2px 5px black;
+    z-index: 0;
+    animation: scaleSide ease-in 1.5s;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="taskmate-icon.png">
+    <title>taskMate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: hsl(210,11%,20%); z-index: -1;">
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark"  >
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="taskmate-icon.png" alt="taskMate" width="40px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+              <li class="nav-item">
+                <a class="nav-link ms-3" href="#login">Login</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link" aria-current="page" href="#about-us">About Us</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+    <div class="container-md mt-4 pt-5 mb-5  pb-5">
+      <div class="row justify-content-center  align-items-center mt-5 pt-5">
+        <div class="col-12 col-lg-6 ps-5  text-center "><img class="logo" src="taskmate-icon.png" width="70%" alt=""></div>
+        <div class="col-12 col-lg-6 mt-5 text-center"><img class="logo" src="taskMate-logo-transparent.png" width="70%" alt=""></div>
+      
+      </div>       
+    </div>
+    <section id="login" class="pt-5">
+      <div class="container-lg d-flex justify-content-center pt-5">
+        <div class="login-details col-10 col-md-4 p-5 mb-5" style="background: hsl(210,11%,15%);border-radius: 8px;">
+          <form id="login-details">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="background: hsl(210,11%,15%);color: rgb(149, 212, 214);" required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" style="background: hsl(210,11%,15%);color: rgb(149, 212, 214);" required>
+            </div>
+            <div class="mb-3 text-center"><button type="submit" class="btn btn-outline-light mt-4">Submit</button></div>          
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="about-us">
+      <div class="container mt-5 mb-5 pb-5 pt-5">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card text-center text-bg-dark mb-3">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Our Mission</h5>
+                <p class="card-text">At TaskMate, we are driven by a simple yet powerful mission: to make task management effortless and enjoyable.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card text-center text-bg-dark mb-3">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Who We Are</h5>
+                <p class="card-text">TaskMate is a dynamic team of passionate individuals who share a common vision of simplifying the way tasks are managed. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card text-center text-bg-dark mb-3">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Our Commitment</h5>
+                <p class="card-text">At TaskMate, we are committed to providing Reliable Products, Exceptional Support, Continuous Improvement</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card text-center text-bg-dark mb-3">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Join Us on the Journey</h5>
+                <p class="card-text">We invite you to join us on this exciting journey towards redefining how tasks are managed. Thank you for choosing TaskMate.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
