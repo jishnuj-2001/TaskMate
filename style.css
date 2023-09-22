@@ -1,19 +1,18 @@
 .logo{
-    animation: transitionIn 1.5s;
-    transform: scale(1);
+    animation: transitionIn 1.5s ease-in; 
     filter: drop-shadow(2px 2px 5px black);
-    z-index: 1;
+    
     
 }
 .navbar{
     background: hsl(0, 0%, 10%);
     box-shadow: 3px 3px 15px rgb(70, 69, 69);
     border-color: hsl(166,100%,80%);
-    animation: scaleDown 1.5s;
+    animation: scaleDown 1.5s ease-in;
 }
 .login-details{
     z-index: 0;
-    animation: scaleSide ease-in 1.5s;
+    animation: scaleSide 1.5s ease-in;
     box-shadow: 2px 2px 5px black;
     filter:blur(0px)
     
@@ -21,16 +20,16 @@
 
 @keyframes transitionIn{
     from{
-        opacity:0;
+        filter:blur(4px);
         transform: scale(.9);
-        
+        filter: drop-shadow(2px 2px 5px black);       
         
     }
     to{
+        filter:blur(0px);
         opacity:1;
         transform: scale(1);
-        filter: drop-shadow(2px 2px 5px black);
-        transition: opacity ease-in;
+        filter: drop-shadow(2px 2px 5px black);      
         
     }
 }
@@ -52,7 +51,7 @@
         box-shadow: 2px 2px 5px black;
     }
     to{
-        
+        z-index: -1;
         transform: translateY(0);
         opacity:1;
         transition: transform ease-in-out ;
